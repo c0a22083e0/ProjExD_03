@@ -140,9 +140,9 @@ class Bomb:
 
 class Score:
     def __init__(self):
-        self.font = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
-        self.font_color = (0, 0, 255)
-        self.score = 0
+        self.font = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30) #フォントの設定
+        self.font_color = (0, 0, 255) #　色を設定青
+        self.score = 0 #初期値設定
         self.img = self.font.render(f"Score: {self.score}", 0, self.font_color)
         self.img_rect = self.img.get_rect()
         self.img_rect.topleft = (100, HEIGHT - 50)  
